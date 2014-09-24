@@ -26,7 +26,17 @@ body{
 	display: none;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.instructions{
+	position: relative;
+	display: block;
+	width: 250px;
+	top:75px;
+	right: 450px;
+	margin-left: 50px;
+	float: right;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .looking-cool {
 	width: 659px;
 	height: 494px;
 }
@@ -49,4 +59,9 @@ body{
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
   background-repeat: no-repeat;
+}
+
+.looking-cool{
+	background-image: url("../images/ryu-cool.gif");
+	display: none;
 }

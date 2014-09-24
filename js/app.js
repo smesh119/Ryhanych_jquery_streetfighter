@@ -29,6 +29,21 @@ $(document).ready(function() {
 	.mouseup(function(){
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
-		//ryu goes back to his ready position
 	});
+
+	$(document.body).keydown(function (e) {
+		if (e.which == 88) { 
+			$(".ryu-ready").hide();
+			$(".ryu-still").hide();
+			$(".looking-cool").show();
+		}
+	})
+
+	.keyup(function (e) {
+		if (e.which == 88) { 
+			$(".looking-cool").hide();
+			$(".ryu-ready").show();
+		}
+	});
+
 });
